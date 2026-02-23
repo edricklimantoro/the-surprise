@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # This triggers the "run" when you push code
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -23,10 +23,9 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-          run: npm install
+        run: npm install
 
       - name: Build
-        # THIS IS THE PART YOU ASKED ABOUT
         run: npm run build
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
@@ -38,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Vite builds into the 'dist' folder
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
