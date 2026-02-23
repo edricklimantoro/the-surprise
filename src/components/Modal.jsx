@@ -28,7 +28,7 @@ const Modal = ({ card, onClose }) => {
         <div className="text-center">
           <span className="text-6xl mb-6 block">{card.icon}</span>
           <h2 className="text-2xl font-serif font-bold text-stone-800 mb-4">{card.title}</h2>
-          <p className="text-stone-600 leading-relaxed mb-8">
+          <p className="text-stone-600 leading-relaxed whitespace-pre-wrap mb-8">
             {card.content}
           </p>
           <button 
