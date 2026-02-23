@@ -82,8 +82,8 @@ function App() {
     <div className="min-h-screen bg-rose-50 text-stone-800 font-sans p-8">
       {/* Header */}
       <header className="max-w-2xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-serif font-bold text-rose-600 mb-2">To My Favorite Person</h1>
-        <p className="text-stone-500 italic">Counting down the days until your special day...</p>
+        <h1 className="text-4xl font-serif font-bold text-rose-600 mb-2">To my favorite person, Pibi</h1>
+        <p className="text-stone-500 italic">We're going through this together and counting down until your special day...</p>
       </header>
 
       {/* Mood Gauge */}
